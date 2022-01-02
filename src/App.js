@@ -44,6 +44,7 @@ function App() {
     fetchMoviesHandler();
   }, [fetchMoviesHandler]);
 
+  // POST Request
   async function addMovieHandler(movie) {
     const response = await fetch(
       'https://react-http-e2025-default-rtdb.europe-west1.firebasedatabase.app/movies.json',
